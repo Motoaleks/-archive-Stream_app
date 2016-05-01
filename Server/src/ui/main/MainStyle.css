@@ -1,0 +1,41 @@
+.custon_list {
+    -fx-background-color: #eceff8;
+}
+
+.custom_button {
+    -fx-background-color: #15a083;
+}
+
+.custom_button:pressed {
+    -fx-background-color: #18806c;
+}
+
+.custom_log {
+    -fx-background-color: #eceff8;
+    -fx-text-fill: black;
+}
+
+.rerun_button {
+    -fx-graphic: url('/res/rerun.png');
+    -fx-background-color: #eceff8;
+    /*-fx-graphic: url('http://icons.iconarchive.com/icons/aha-soft/desktop-buffet/128/Pizza-icon.png');*/
+}
+
+.rerun_button:pressed {
+    -fx-graphic: url('/res/rerun.png');
+    -fx-background-color: darkgrey;
+}
+
+/*.list-cell:filled:selected:focused, .list-cell:filled:selected {*/
+/*-fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);*/
+/*-fx-text-fill: white;*/
+/*}*/
+
+/*.list-cell:even { !* <=== changed to even *!*/
+/*-fx-background-color: white;*/
+/*}*/
+
+/*.list-cell:filled:hover {*/
+/*-fx-background-color: #0093ff;*/
+/*-fx-text-fill: white;*/
+/*}*/
