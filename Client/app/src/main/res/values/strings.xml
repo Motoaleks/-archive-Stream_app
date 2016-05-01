@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StreamEra</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="ip">IP</string>
+    <string name="port">Port</string>
+    <string name="setting_title">Server Setting</string>
+    <string name="title_activity_start_screen">StartScreen</string>
+    <string name="connecting">connecting…</string>
+    <string name="version">version</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="lbl_ip_adress">IP address:</string>
+    <string name="lbl_port">Port:</string>
+    <string name="lbl_location">Location: </string>
+</resources>
