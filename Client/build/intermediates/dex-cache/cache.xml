@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\libs\gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\gson-2.6.2_f53fd05dddf7252f77b828a03b7c06cd7f1bd56b.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="63780fa64c5ee0f56e54fa90a6ed0d8b00e3e375">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_8d667564093ff78b02ad940887c631fda5f8a8ed.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.1_2e50cd4e2caf3b15655f53c78f61e81c5ce6661b.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_31a60f80a826f92c5f10fa7cfa9015d6a363a04a.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_c8025a39c488ecab407332ca4d8b2f9960d0d607.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndroidStudio\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_16cf4ba79bb3acbb3c15be2ee340e76bedb83abd.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_59778213d264be7de492dbcda6692d6c82933537.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.github.dmytrodanylyk\android-morphing-button\98a4986e56\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5244bf01f33c8b895d65f09d14f56a9a559f8c9d">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.github.dmytrodanylyk-android-morphing-button-98a4986e56_349e025bd4799e326db0c323223a7455f0ea699e.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="24559bcbb78b435ccebbd5860bd9bd5237faf2ff">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\instant-run_e7c93f5fd8ccd2858e3e592d14547cc37629942a.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_3ce8c80ac6cfbf0a53ee21f37dec84554a495cb4.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_086a815d631c67377787097045f6f0edd73667e6.jar" />
+    </item>
+    <item
+        jar="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\exploded-aar\com.pnikosis\materialish-progress\1.7\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="41a4edf3c43fdbce6eba27da50b17ff9933987f1">
+        <dex dex="C:\Alex\AndoidApps\StreamEra\Client\app\build\intermediates\pre-dexed\debug\com.pnikosis-materialish-progress-1.7_10c6f56ed128c44f3856c7d1709ea5330d11c736.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ip_adress"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pad_10dp"
+        android:paddingTop="@dimen/pad_5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pad_5dp"
+            android:layout_marginRight="@dimen/pad_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_ip_locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:text="@string/lbl_ip_adress"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lbl_port_locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:text="@string/lbl_port"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lbl_location_locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_location"
+                android:textColor="@color/textColorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pad_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:textColor="@color/colorIpAndPort"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lbl_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:textColor="@color/colorIpAndPort"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lbl_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.dd.morphingbutton.MorphingButton
+        android:id="@+id/button_capture"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/start"
+        android:textColor="@color/windowBackground" />
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package io;
 
+import com.google.gson.JsonObject;
 import data.Abstractions.StreamData;
 import data.Listeners.ErrorListener;
 import data.Listeners.PoolListener;
@@ -32,6 +33,7 @@ public class StreamPool implements SimpleStreamListener{
 
 
     // Pool options
+<<<<<<< HEAD
     public boolean heartbeatStream(String id) {
         UserStream userStream = pool.get(id);
         try {
@@ -50,6 +52,12 @@ public class StreamPool implements SimpleStreamListener{
             e.printStackTrace();
         }
         return false;
+=======
+    public boolean heartbeatStream(String id){
+        JsonObject heartbeat = new JsonObject();
+        heartbeat.addProperty("heartbeat", 200);
+        return true;
+>>>>>>> origin/master
     }
 
     public void heartbeatStreams() {
