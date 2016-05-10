@@ -2,10 +2,9 @@ package io;
 
 import data.Abstractions.StreamData;
 import data.BufferManager;
-import data.Listeners.DataListener;
-import data.Listeners.ErrorListener;
-import data.Listeners.PoolListener;
-import data.Listeners.ServerListener;
+import data.Listeners.*;
+import javafx.application.Platform;
+import ui.main.Main;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -17,46 +16,48 @@ import java.util.List;
  * "The more we do, the more we can do." ©
  */
 public class Server extends Thread{
+    // parent
+    Main main;
+
     // Компоненты сервера
-    private static Server server;
     private ServerSocket serverSocket;
     private StreamPool streamPool;
     private BufferManager bufferManager;
     // Listeners
-    private DataListener dataListener; // converter
+//    private DataListener dataListener; // converter
     private PoolListener poolListener; // pool
     private ErrorListener errorListener; // errors
     private ServerListener serverListener; // current server
     // Параметрыы сервера
     private int port = 8585;
     private static final int MAX_USERS = 10;
-    private int bufferActive = 0;
 
-    public Server(){
-        synchronized (server){
-            server = this;
-        }
+    public Server(Main main){
+        super();
+        this.main = main;
         streamPool = new StreamPool(this.poolListener);
+        streamPool.setErrorListener(errorListener);
         bufferManager = new BufferManager();
     }
-
-    public Server(PoolListener poolListener, DataListener dataListener) {
-        this();
-        this.poolListener = poolListener;
-        this.dataListener = dataListener;
-    }
-
-    public Server(PoolListener poolListener, DataListener dataListener, int port) {
-        this(poolListener, dataListener);
-        this.port = port;
-    }
+//
+//    public Server(PoolListener poolListener) {
+//        this();
+//        this.poolListener = poolListener;
+//    }
+//
+//    public Server(PoolListener poolListener, int port) {
+//        this(poolListener);
+//        this.port = port;
+//    }
 
 
     @Override
     public void run() {
         super.run();
+        Platform.runLater(() -> main.onServerThinking());
         try {
             serverSocket = new ServerSocket(port);
+            Platform.runLater(() -> main.onServerOpen());
             while (!isInterrupted()) {
                 Socket inputConnection = serverSocket.accept();
 
@@ -67,24 +68,13 @@ public class Server extends Thread{
                 HandleIncomingConnection handleIncomingConnection = new HandleIncomingConnection(this, streamPool, inputConnection);
                 handleIncomingConnection.start();
             }
-
-            // Здесь операции по завершению работы сервера
-            serverSocket.close();
-            streamPool.closeAllConnections();
         } catch (IOException e) {
-            errorListener.onError("Error on running server: " + e.getMessage());
-            e.printStackTrace();
+            errorListener.onError("Server going offline.");
         }
     }
 
     public ErrorListener getErrorListener() {
         return errorListener;
-    }
-
-    public static Server getCurrentServer() {
-        synchronized (server){
-            return server;
-        }
     }
 
     // Server options
@@ -94,20 +84,19 @@ public class Server extends Thread{
     public void deleteStream(String id) {
         streamPool.removeUserStream(id);
     }
-    public void openStream(String id){
+    public UserStream openStream(String id){
         if (!streamPool.heartbeatStream(id)){
             errorListener.onError("Warning in opening stream: user is not active anymore.");
-            return;
+            return null;
         }
         UserStream user = streamPool.getUserStream(id);
-        user.setBufferManager(bufferManager);
         try{
-            user.sendStart();
+            user.requestStart();
         } catch (IOException e) {
             e.printStackTrace();
             errorListener.onError("Error in opening stream: user is not active anymore.");
         }
-
+        return user;
     }
     public void closeStream(String id){
         streamPool.removeUserStream(id);
@@ -115,17 +104,35 @@ public class Server extends Thread{
     public void heartbeatStreams(){
         streamPool.heartbeatStreams();
     }
+    public void closeServer(){
+        // Здесь операции по завершению работы сервера
+        try {
+            serverSocket.close();
+            streamPool.closeAllConnections();
+        } catch (IOException e) {
+            errorListener.onError("Error on running server: " + e.getMessage());
+            e.printStackTrace();
+        }
+        Platform.runLater(() -> main.onServerClosed());
+        interrupt();
+    }
 
 
     // Listener setters
-    public void setDataListener(DataListener dataListener) {
-        this.dataListener = dataListener;
-    }
+//    public void setDataListener(DataListener dataListener) {
+//        this.dataListener = dataListener;
+//    }
     public void setPoolListener(PoolListener poolListener) {
         this.poolListener = poolListener;
+        if (streamPool != null){
+            streamPool.setPoolListener(poolListener);
+        }
     }
     public void setErrorListener(ErrorListener errorListener) {
         this.errorListener = errorListener;
+        if (streamPool != null){
+            streamPool.setErrorListener(errorListener);
+        }
     }
     public void setServerListener(ServerListener serverListener) {
         this.serverListener = serverListener;

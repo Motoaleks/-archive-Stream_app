@@ -1,3 +1,8 @@
 .custom_stream {
     -fx-background-color: #212121;
 }
+
+.custon_geo{
+    -fx-background-color: #558C89;
+    -fx-text-fill: #ECECEA;
+}

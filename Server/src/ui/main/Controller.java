@@ -1,21 +1,26 @@
 package ui.main;
 
+import io.Server;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class Controller {
-    private MainServer single;
+    private Main single;
 
     public Controller() {
-        single = MainServer.getInstance();
+        single = Main.getInstance();
     }
 
     @FXML
     public void handleStartServerEvent(ActionEvent event) {
-        if (!single.isServerOnline())
-            single.startServer();
-        else
-            single.stopServer();
+        switch (single.getServerStatus()){
+            case -1:
+                single.startServer();
+                break;
+            case 1:
+                single.stopServer();
+                break;
+        }
     }
 
     @FXML

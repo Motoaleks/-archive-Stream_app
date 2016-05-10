@@ -45,9 +45,9 @@ public class BufferManager extends Thread {
     /**
      * Слушатель о завершении преобразования одного фрейма
      */
-    private DataListener mListener;
+    private DataListener dataListener;
 
-    public BufferManager(){
+    public BufferManager() {
 
     }
 
@@ -66,17 +66,6 @@ public class BufferManager extends Thread {
         }
     }
 
-    // TODO: 30.04.2016 DELETE THIS CONSTRUCTOR
-    public BufferManager(int length, int width, int height){
-        this();
-        pictureData = new PictureData(length,width,height);
-
-        mBufferQueue = new ImageFrameBuffer[MAX_BUFFER_COUNT];
-        for (int i = 0; i < MAX_BUFFER_COUNT; ++i) {
-            mBufferQueue[i] = new ImageFrameBuffer(pictureData.getFrameLength(), pictureData.getWidth(), pictureData.getHeight());
-        }
-    }
-
     /**
      * Общий метод направляющий на раскадрирование по фреймам поток последовательно идущих фреймов
      *
@@ -85,7 +74,7 @@ public class BufferManager extends Thread {
      */
     public void fillBuffer(byte[] data, int len) {
         // не проведена инициализация
-        if (pictureData == null || !pictureData.checkCorrect()){
+        if (pictureData == null || !pictureData.checkCorrect()) {
             return;
         }
 
@@ -146,13 +135,18 @@ public class BufferManager extends Thread {
      */
     public void setOnDataListener(DataListener listener) {
         // Слушатель изменения информации
-        mListener = listener;
+        dataListener = listener;
         // при установке слушателя тут же начинается превращение из кадров в картинки
-        start();
+        if (listener != null)
+            start();
     }
 
     public void setPictureData(PictureData pictureData) {
         this.pictureData = pictureData;
+    }
+
+    public DataListener getDataListener() {
+        return dataListener;
     }
 
     /***
@@ -198,8 +192,9 @@ public class BufferManager extends Thread {
                     // портирование массива в картинку
                     bufferedImage.setRGB(0, 0, pictureData.getWidth(), pictureData.getHeight(), rgbArray, 0, pictureData.getWidth());
 
-                    // сообщим о создании очередной картинки
-                    mListener.onDirty(bufferedImage);
+                    if (dataListener != null)
+                        // сообщим о создании очередной картинки
+                        dataListener.onDirty(bufferedImage);
                     // время занятое на трансформацию очередного кадра
                     System.out.println("time cost = " + (System.currentTimeMillis() - t));
                 }

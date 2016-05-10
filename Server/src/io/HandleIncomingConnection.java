@@ -3,13 +3,11 @@ package io;
 import com.google.gson.*;
 import data.Abstractions.PictureData;
 import data.Abstractions.StreamData;
+import data.BufferManager;
 import data.Listeners.ErrorListener;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -22,8 +20,8 @@ public class HandleIncomingConnection extends Thread {
     private JsonObject object;
     private StreamPool pool;
     private UserStream user;
-    private BufferedInputStream inputStream;
-    private BufferedOutputStream outputStream;
+    private BufferedReader inputStream;
+    private BufferedWriter outputStream;
     private ErrorListener errorListener;
 
     public HandleIncomingConnection(Server server, StreamPool pool, Socket incoming) {
@@ -39,8 +37,9 @@ public class HandleIncomingConnection extends Thread {
         try {
             // не должен меняться до конца этой операции
             synchronized (socket) {
-                outputStream = new BufferedOutputStream(socket.getOutputStream());
-                inputStream = new BufferedInputStream(socket.getInputStream());
+                outputStream = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                inputStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
 
                 // проверка на json запрос
                 boolean isJson = isIncomingJson();
@@ -61,9 +60,14 @@ public class HandleIncomingConnection extends Thread {
                 }
 
                 // закрываем соединения если запрос был краткосрочный или неправильный
-                inputStream.close();
-                outputStream.close();
-                socket.close();
+                try {
+                    inputStream.close();
+                    outputStream.close();
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    errorListener.onError("Error in disconnecting wrong connection.");
+                }
             }
         } catch (IOException e) {
             errorListener.onError("Incoming connection error: " + e.getMessage());
@@ -73,15 +77,14 @@ public class HandleIncomingConnection extends Thread {
 
     private boolean isIncomingJson() {
         try {
-            int len = 0;
-            byte[] buff = new byte[256];
-
             // чтение Json
-            len = inputStream.read(buff);
-            String message = new String(buff, 0, len);
+            String message = inputStream.readLine();
             JsonParser parser = new JsonParser();
             JsonElement element = null;
             try {
+                if (message == null){
+                    throw  new JsonParseException("Message is null.");
+                }
                 element = parser.parse(message);
             } catch (JsonParseException e) {
                 errorListener.onError("Incoming connection refused: not a json.");
@@ -118,22 +121,28 @@ public class HandleIncomingConnection extends Thread {
         }
 
         // Значит это не запрос на регистрацию стрима
-        user = new UserStream(server, inputStream, outputStream);
-        user.initialize(pictureData);
+        user = new UserStream(server, socket);
+        user.setPictureData(pictureData);
+        user.setBufferManager(new BufferManager(pictureData));
         return true;
     }
 
     private void sendStreams(List<StreamData> streams) {
         // создание сообщения
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("info", "streamData");
         JsonArray streamList = new JsonArray();
         for (StreamData userData : streams) {
             JsonObject currentUser = new JsonObject();
             currentUser.addProperty("name", userData.getName());
             currentUser.addProperty("id", userData.getId());
+            streamList.add(currentUser);
         }
+        jsonObject.add("streams", streamList);
         // попытка отправки
         try {
-            outputStream.write(streamList.toString().getBytes());
+            outputStream.write(jsonObject.toString() + "\n");
+            outputStream.flush();
         } catch (IOException e) {
             errorListener.onError("Warning on incoming connection: Can not send stream list, probably user disconnected.");
         }

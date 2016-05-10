@@ -341,7 +341,7 @@ public class SocketServer extends Thread {
 //                    // если буфер создался нормально
 //                    if (imageBuff != null) {
 //                        // Просим клиента подождать
-//                        sendWait();
+//                        requestWait();
 //
 //                        // Установим заглушку
 //                        setDefaultDataListener();
@@ -355,7 +355,7 @@ public class SocketServer extends Thread {
 //                                continue;
 //
 //                            // Сообщаем клиенту о старте
-//                            sendStart();
+//                            requestStart();
 //                            while ((len = inputStream.read(imageBuff)) != -1 && isOn) {
 //                                mBufferManager.fillBuffer(imageBuff, len);
 //                            }
@@ -364,7 +364,7 @@ public class SocketServer extends Thread {
 //                                break;
 //
 //                            // Возвращаем клиента в ожидание
-//                            sendWait();
+//                            requestWait();
 //                        }
 //
 //                        isOn = false;
@@ -450,7 +450,7 @@ public class SocketServer extends Thread {
 //         *
 //         * @throws IOException
 //         */
-//        public void sendWait() throws IOException {
+//        public void requestWait() throws IOException {
 //            if (outputStream == null) {
 //                return;
 //            }
@@ -466,7 +466,7 @@ public class SocketServer extends Thread {
 //         *
 //         * @throws IOException
 //         */
-//        public void sendStart() throws IOException {
+//        public void requestStart() throws IOException {
 //            if (outputStream == null) {
 //                return;
 //            }

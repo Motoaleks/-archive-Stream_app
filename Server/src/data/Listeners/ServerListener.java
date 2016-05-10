@@ -5,7 +5,9 @@ package data.Listeners;
  * "The more we do, the more we can do." ©
  */
 public interface ServerListener {
-    void onServerClosing();
+    void onServerThinking();
 
     void onServerClosed();
+
+    void onServerOpen();
 }

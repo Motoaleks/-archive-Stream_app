@@ -6,37 +6,50 @@ package data.Abstractions;
  */
 public class Coordinate {
     // Широта и долгота
-    int latitude, longitude;
+    double latitude, longitude;
 
     Coordinate() {
     }
 
-    Coordinate(int latitude, int longitude) {
+    public Coordinate(double latitude, double longitude) {
         this();
         setCoordinates(latitude, longitude);
     }
 
+    public Coordinate(double[] data){
+        this();
+        setCoordinates(data[0],data[1]);
+    }
+
 
     // Сеттеры
-    public void setLatitude(int latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public void setLongitude(int longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
-    public void setCoordinates(int latitude, int longitude) {
+    public void setCoordinates(double latitude, double longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public int getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public int getLongitude() {
+    public double getLongitude() {
         return longitude;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj.getClass() != this.getClass()){
+            return false;
+        }
+        return this.longitude == ((Coordinate) obj).longitude && this.latitude == ((Coordinate) obj).latitude;
     }
 
     @Override

@@ -50,7 +50,7 @@ public class StreamData {
     }
 
     public void setId(String id) {
-        if (id != null)
+        if (this.id != null)
             throw new IllegalArgumentException("Id already set.");
         this.id = id;
     }

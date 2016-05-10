@@ -1,5 +1,7 @@
 package data.Listeners;
 
+import data.Abstractions.Coordinate;
+
 import java.awt.image.BufferedImage;
 
 /**
@@ -14,7 +16,7 @@ public interface GeoListener {
     /**
      * Информирует о изменении геопозиции стрима
      *
-     * @param bufferedImage Получившаяся картинка
+     * @param coordinate новая координата
      */
-    void onGeoChange(BufferedImage bufferedImage);
+    void onGeoChange(Coordinate coordinate);
 }
