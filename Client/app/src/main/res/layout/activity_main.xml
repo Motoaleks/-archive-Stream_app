@@ -7,15 +7,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.aleksandr.socketstreamer.MainActivity">
+    tools:context=".UI.MainActivity">
 
     <ListView
-        android:id="@+id/streamsOnline"
+        android:id="@+id/lv_streams"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/btnLaunchStreamActivity"
         android:layout_alignParentEnd="true"
-        tools:listitem="@android:layout/simple_list_item_2" />
+        tools:listitem="@android:layout/simple_list_item_2"
+        android:divider="@drawable/listview_divider"
+        android:foregroundGravity="top"/>
 
     <Button
         android:id="@+id/btnLaunchStreamActivity"

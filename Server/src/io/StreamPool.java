@@ -1,5 +1,6 @@
 package io;
 
+import com.google.gson.JsonObject;
 import data.Abstractions.StreamData;
 import data.Listeners.PoolListener;
 
@@ -26,7 +27,8 @@ public class StreamPool {
 
     // Pool options
     public boolean heartbeatStream(String id){
-        // TODO: 01.05.2016 this method
+        JsonObject heartbeat = new JsonObject();
+        heartbeat.addProperty("heartbeat", 200);
         return true;
     }
     public void heartbeatStreams(){

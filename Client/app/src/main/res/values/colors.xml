@@ -14,4 +14,7 @@
 
     <color name="inactiveStream">#34495e</color>
     <color name="activeStream">#e74c3c</color>
+
+    <color name="statusNoMatter">#ff424242</color>
+    <color name="statusError">#e74c3c</color>
 </resources>

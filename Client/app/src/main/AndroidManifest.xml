@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dynamsoft.ipcamera"
+    package="com.example.aleksandr.socketstreamer"
     android:versionName="1.0">
 
     <uses-sdk
@@ -29,19 +29,19 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.aleksandr.socketstreamer.StreamingActivity"
+            android:name=".UI.StreamingActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
 
         </activity>
         <activity
-            android:name="com.example.aleksandr.socketstreamer.StartScreen"
+            android:name=".UI.StartScreen"
             android:label="@string/title_activity_start_screen">
 
         </activity>
         <activity
-            android:name="com.example.aleksandr.socketstreamer.MainActivity"
-            android:label="@string/title_activity_main">
+            android:name=".UI.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
