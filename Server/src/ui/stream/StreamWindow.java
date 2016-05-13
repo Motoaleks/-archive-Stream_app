@@ -144,6 +144,9 @@ public class StreamWindow extends Application implements DataListener, GeoListen
         // прорисовываем картинку
         if (mLastFrame != null) {
             currentFrame = SwingFXUtils.toFXImage(mLastFrame, null);
+            if (currentFrame == null || stream == null){
+                return;
+            }
             stream.setImage(currentFrame);
         } else if (mImage != null) {
             // или заглушку

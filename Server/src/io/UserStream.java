@@ -125,169 +125,19 @@ public class UserStream extends Thread {
 
             } catch (IOException e) {
                 // TODO: 07.05.2016 Here we need to delete the stream
-                if (errorListener != null)
-                    errorListener.onError("Error on client <" + getStreamData().getId() + ">:" + e.getMessage());
-                e.printStackTrace();
+                server.deleteStream(getStreamData().getId());
+                if (streamStatus != -1) {
+                    if (errorListener != null)
+                        errorListener.onError("Error on client <" + getStreamData().getId() + ">:" + e.getMessage());
+                    e.printStackTrace();
+                }
                 break;
+            } catch (Exception ignored) {
+                server.deleteStream(getStreamData().getId());
             }
-//            catch (InterruptedException e) {
-//                try {
-//                    // отсылка пинга
-//                    sendHeartbeat();
-//                    // если пинг не прошёл
-//                    if (!waitForHeartbeat()) {
-//                        setStreamStatus(-1);
-//                        synchronized (heartbeatWaiter) {
-//                            heartbeatWaiter.notify();
-//                        }
-//                        break;
-//                    }
-//                } catch (IOException e1) {
-//                    if (errorListener != null)
-//                        errorListener.onError("Heartbeat id <" + getStreamData().getId() + "> not working.");
-//                    setStreamStatus(-1);
-//                    synchronized (heartbeatWaiter) {
-//                        heartbeatWaiter.notify();
-//                    }
-//                    break;
-//                }
-//            }
         }
         closeStream();
     }
-
-
-    //    @Override
-//    public void run() {
-//        super.run();
-//
-//        try {
-//            while (!Thread.currentThread().isInterrupted()) {
-//                System.out.println("Client initiated, id " + streamData.getId());
-//
-//
-//                // инициализация потоков ввода-вывода
-//                inputStream = new BufferedInputStream(socket.getInputStream());
-//                outputStream = new BufferedOutputStream(socket.getOutputStream());
-//
-//                // буфер для сообщений
-//                byte[] buff = new byte[256];
-//                byte[] imageBuff = null;
-//                // длина нового сообщения
-//                int len = 0;
-//                String msg = null;
-//                // пока можно прочитать сообщение (то есть пока оно есть)
-//                while ((len = inputStream.read(buff)) != -1) {
-//                    // читаем сообщение
-//                    msg = new String(buff, 0, len);
-//                    // Анализируем JSON
-//                    JsonParser parser = new JsonParser();
-//                    boolean isJSON = true;
-//                    JsonElement element = null; //текущее json распарсенное сообщение
-//                    try {
-//                        element = parser.parse(msg);
-//                    } catch (JsonParseException e) {
-//                        System.out.println("exception: " + e);
-//                        isJSON = false;
-//                    }
-//                    // если получилось распарсить и есть json элемент
-//                    if (isJSON && element != null) {
-//                        // получение параметров из объекта
-//                        JsonObject obj = element.getAsJsonObject();
-//                        element = obj.get("type");
-//                        if (element != null && element.getAsString().equals("data")) {
-//                            element = obj.get("length");
-//                            int length = element.getAsInt();
-//                            element = obj.get("width");
-//                            int width = element.getAsInt();
-//                            element = obj.get("height");
-//                            int height = element.getAsInt();
-//
-//                            // зная длину одного фрейма создаём буфер
-//                            imageBuff = new byte[length];
-//                            // создаём менеджер буферов
-//                            bufferManager = new BufferManager(streamData.getPictureData());
-//                            break;
-//                        }
-//                    }
-//                    // если Json не получен запишем в буфер ошибок
-//                    else {
-//                        errorListener.onError("");
-//                        break;
-//                    }
-//                }
-//
-//                // если буфер создался нормально
-//                if (imageBuff != null) {
-//                    // Просим клиента подождать
-//                    requestWait();
-//
-//                    // Установим заглушку
-//
-//                    while (!isClosed) {
-//
-//                        // ждём изменения DataListener-a
-//                        callUpdate.wait();
-//
-//                        // Если всё равно не включён - возвращаемся
-//                        if (!isOn)
-//                            continue;
-//
-//                        // Сообщаем клиенту о старте
-//                        requestStart();
-//                        while ((len = inputStream.read(imageBuff)) != -1 && isOn) {
-//                            bufferManager.fillBuffer(imageBuff, len);
-//                        }
-//                        // пользователь закрыл трансляцию
-//                        if (len == -1)
-//                            break;
-//
-//                        // Возвращаем клиента в ожидание
-//                        requestWait();
-//                    }
-//
-//                    isOn = false;
-//                    mServer.stopStream(streamData.getId());
-//                }
-//
-//                // если был менеджер буферов - закрытие его для данного клиента
-//                if (bufferManager != null) {
-//                    bufferManager.close();
-//                }
-//            }
-//
-//        } catch (InterruptedException e) {
-//            mServer.writeError(streamData.getId(), "Error waiting for DataListener.");
-//        } catch (IOException e) {
-//            mServer.writeError(streamData.getId(), "Error in taking information from user.");
-//        } finally
-//
-//        {
-//            try {
-//                // закрытие выходящего канала
-//                if (outputStream != null) {
-//                    outputStream.close();
-//                    outputStream = null;
-//                }
-//
-//                // закрытие входящего канала
-//                if (inputStream != null) {
-//                    inputStream.close();
-//                    inputStream = null;
-//                }
-//
-//                // закрытие сокета клиента
-//                if (socket != null) {
-//                    socket.close();
-//                    socket = null;
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//                mServer.writeError(streamData.getId(), "Error closing streams.");
-//            }
-//
-//        }
-//    }
 
     // Запросы
     public void requestWait() throws IOException {
@@ -430,7 +280,10 @@ public class UserStream extends Thread {
         if (geoListener != null)
             geoListener.onGeoChange(new Coordinate(geo));
         if (bufferManager != null)
-            bufferManager.fillBuffer(data, data.length);
+//            bufferManager.fillBuffer(data, data.length);
+            bufferManager.completeImageReceived(data);
+
+
 //        jsonReader.nextName();
 //        DataResponse dataResponse;
 //        synchronized (jsonReader) {

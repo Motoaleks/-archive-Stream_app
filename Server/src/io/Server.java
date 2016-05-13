@@ -119,9 +119,6 @@ public class Server extends Thread{
 
 
     // Listener setters
-//    public void setDataListener(DataListener dataListener) {
-//        this.dataListener = dataListener;
-//    }
     public void setPoolListener(PoolListener poolListener) {
         this.poolListener = poolListener;
         if (streamPool != null){

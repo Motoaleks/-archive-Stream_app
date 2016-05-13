@@ -2,10 +2,14 @@ package data;
 
 import data.Abstractions.PictureData;
 import data.Listeners.DataListener;
-import ui.Utils;
 
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 //!!! Для данного случая, используется слово фрейм - ещё не обработанный массив байтов или его часть,
 //!!! равная размеру в байтах картинки полученной с камеры на телефоне
@@ -46,6 +50,8 @@ public class BufferManager extends Thread {
      * Слушатель о завершении преобразования одного фрейма
      */
     private DataListener dataListener;
+
+    private final LinkedList<BufferedImage> Queue = new LinkedList<>();
 
     public BufferManager() {
 
@@ -149,6 +155,24 @@ public class BufferManager extends Thread {
         return dataListener;
     }
 
+    public void completeImageReceived(byte[] imageArray) {
+        try {
+            BufferedImage bufferedImage;
+            InputStream in = new ByteArrayInputStream(imageArray);
+
+            bufferedImage = ImageIO.read(in);
+
+            synchronized (Queue) {
+                if (Queue.size() > 15) {
+                    Queue.poll();
+                }
+                Queue.add(bufferedImage);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     /***
      * Закрытие процесса превращения кадров в картинки
      */
@@ -171,35 +195,60 @@ public class BufferManager extends Thread {
         super.run();
         // Работает пока не будет прерван специально
         while (!Thread.currentThread().isInterrupted()) {
-            // буффер
-            byte[] data = null;
 
-            // синхронизируем по потоку кадров
-            synchronized (mYUVQueue) {
-                // Получение последней картинки из "потока" с телефона
-                data = mYUVQueue.poll();
+            synchronized (Queue) {
+                BufferedImage image = null;
+                try {
+                    image = Queue.poll();
+                } catch (NoSuchElementException ignored) {
 
-                // Если последний кадр существует
-                if (data != null) {
-                    // получение дампа времени
-                    long t = System.currentTimeMillis();
-
-                    BufferedImage bufferedImage = null;
-                    // конвертирование потока(массива) в RGB из YUV
-                    int[] rgbArray = Utils.convertYUVtoRGB(data, pictureData.getWidth(), pictureData.getHeight());
-                    // создание картинки
-                    bufferedImage = new BufferedImage(pictureData.getWidth(), pictureData.getHeight(), BufferedImage.TYPE_USHORT_565_RGB);
-                    // портирование массива в картинку
-                    bufferedImage.setRGB(0, 0, pictureData.getWidth(), pictureData.getHeight(), rgbArray, 0, pictureData.getWidth());
-
-                    if (dataListener != null)
-                        // сообщим о создании очередной картинки
-                        dataListener.onDirty(bufferedImage);
-                    // время занятое на трансформацию очередного кадра
-                    System.out.println("time cost = " + (System.currentTimeMillis() - t));
                 }
+                if (image == null) {
+                    continue;
+                } else {
+                    if (dataListener != null) {
+                        dataListener.onDirty(image);
 
+                    }
+                }
             }
+
+//            // буффер
+//            byte[] data = null;
+//
+//            // синхронизируем по потоку кадров
+//            synchronized (mYUVQueue) {
+//                // Получение последней картинки из "потока" с телефона
+//                data = mYUVQueue.poll();
+//
+//                // Если последний кадр существует
+//                if (data != null) {
+//                    // получение дампа времени
+//                    long t = System.currentTimeMillis();
+//
+//                    BufferedImage bufferedImage = null;
+//                    // конвертирование потока(массива) в RGB из YUV
+////                    int[] rgbArray = Utils.convertYUVtoRGB(data, pictureData.getWidth(), pictureData.getHeight());
+////                    // создание картинки
+////                    bufferedImage = new BufferedImage(pictureData.getWidth(), pictureData.getHeight(), BufferedImage.TYPE_USHORT_565_RGB);
+////                    // портирование массива в картинку
+////                    bufferedImage.setRGB(0, 0, pictureData.getWidth(), pictureData.getHeight(), rgbArray, 0, pictureData.getWidth());
+//
+//                    InputStream in = new ByteArrayInputStream(data);
+//                    try {
+//                        bufferedImage = ImageIO.read(in);
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//
+//                    if (dataListener != null)
+//                        // сообщим о создании очередной картинки
+//                        dataListener.onDirty(bufferedImage);
+//                    // время занятое на трансформацию очередного кадра
+//                    System.out.println("time cost = " + (System.currentTimeMillis() - t));
+//                }
+//
+//            }
         }
     }
 }
