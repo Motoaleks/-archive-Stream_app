@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Stream Era</string>
-    <string name="action_settings">Settings</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="ok">OK</string>
@@ -26,4 +25,10 @@
     <string name="lbl_Name">Name</string>
     <string name="lbl_Id">Id</string>
     <string name="coming_soon">Soon!</string>
+    
+    <string name="action_greyscale">Greyscale</string>
+    <string name="action_sepia">Sepia</string>
+    <string name="action_blur">Blur</string>
+    <string name="action_binary">Binary</string>
+    <string name="action_default">Default</string>
 </resources>

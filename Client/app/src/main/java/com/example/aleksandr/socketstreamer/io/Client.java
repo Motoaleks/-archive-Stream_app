@@ -48,7 +48,7 @@ public class Client extends Thread implements LocationListener {
     // Paramerers
     private String hostIp;
     private int hostPort = -1;
-    private CameraPreview cameraPreview; // TODO: 03.05.2016 возможно переписать этот класс
+    private CameraPreview cameraPreview;
     private int translationStatus; // -1 = закончено соединение, 0 = ожидание/не подсоединялось, 1 = активно
 
     // listeners
@@ -254,10 +254,12 @@ public class Client extends Thread implements LocationListener {
                     }
                     e.printStackTrace();
                 } catch (IOException e) {
-                    if (errorListener != null) {
-                        errorListener.onError("Sending data error.");
+                    if (translationStatus != -1){
+                        if (errorListener != null) {
+                            errorListener.onError("Sending data error.");
+                        }
+                        e.printStackTrace();
                     }
-                    e.printStackTrace();
                 }
                 synchronized (statusBell) {
                     try {
@@ -299,6 +301,7 @@ public class Client extends Thread implements LocationListener {
                 jsonObject.put("length", cameraPreview.getPreviewLength());
                 jsonObject.put("width", cameraPreview.getPreviewWidth());
                 jsonObject.put("height", cameraPreview.getPreviewHeight());
+//                jsonObject.put("length", cameraPreview.getAc)
             } catch (JSONException e) {
                 if (errorListener != null) {
                     errorListener.onError(">>> Error making json in initial message.");

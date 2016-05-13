@@ -1,9 +1,27 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_default"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_default" />
+
+    <item
+        android:id="@+id/action_greyscale"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_greyscale" />
+
+    <item
+        android:id="@+id/action_sepia"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_sepia" />
+
+    <item
+        android:id="@+id/action_binary"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_binary" />
 
 </menu>

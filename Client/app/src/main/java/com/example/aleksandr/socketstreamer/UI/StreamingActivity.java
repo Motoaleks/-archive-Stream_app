@@ -6,6 +6,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.graphics.ColorMatrix;
+import android.graphics.Paint;
+import android.hardware.Camera;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -13,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
@@ -58,18 +63,38 @@ public class StreamingActivity extends Activity implements ErrorListener {
     private int port = DEFAULT_PORT;
     private StreamFactory streamFactory = new StreamFactory();
 
+
+    // Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stream);
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         // контекст программы
         context = this;
 
+        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
+//        ViewTreeObserver vto = preview.getViewTreeObserver();
+//        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//            @Override
+//            public void onGlobalLayout() {
+//                preview.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+////                if (cameraPreview != null) {
+////                    cameraPreview.setActualPreviewSize(preview.getMeasuredWidth(), preview.getMeasuredHeight());
+////                }
+//                previewWidth = preview.getMeasuredWidth();
+//                previewHeight = preview.getMeasuredHeight();
+//                if (cameraPreview != null){
+//                    cameraPreview.setActualPreviewSize(previewWidth,previewHeight);
+//                }
+//
+//            }
+//        });
         streamFactory.createCameraPreview();
-
-        final FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(cameraPreview);
+
 
         // Установка ip
         lbl_ip = (TextView) findViewById(R.id.lbl_ip);
@@ -116,8 +141,36 @@ public class StreamingActivity extends Activity implements ErrorListener {
         // изначально выключен
         btnStart.morph(morphingOperations.off);
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        closeSocketClient();
+        cameraPreview.onPause();
+        cameraManager.onPause();              // release the camera immediately on pause event
+        if (streamStatus)
+            btnStart.callOnClick();
+        reset();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        cameraManager.onResume();
+        cameraPreview.setCamera(cameraManager.getCamera());
+    }
 
-    class MorphingOperations{
+    // Error listener
+    @Override
+    public void onError(final String message) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    // operations for morphing button
+    class MorphingOperations {
         public final MorphingButton.Params off = MorphingButton.Params.create()
                 .duration(500)
                 .cornerRadius((int) getResources().getDimension(R.dimen.btn_10dp))
@@ -135,27 +188,6 @@ public class StreamingActivity extends Activity implements ErrorListener {
                 .colorPressed(R.color.mb_blue_dark) // pressed state color
                 .icon(R.drawable.stop); // icon
     }
-
-    @Override
-    public void onError(final String message) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    public void offButton(){
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                btnStart.morph(morphingOperations.off);
-                streamStatus = false;
-            }
-        });
-    }
-
     // Цепочка вызовов создания стрима
     private class StreamFactory {
         private void createCameraManager() {
@@ -171,6 +203,10 @@ public class StreamingActivity extends Activity implements ErrorListener {
                 return;
             }
             cameraPreview = new CameraPreview(context, cameraManager.getCamera());
+            cameraPreview.setFilter(CameraPreview.Filters.DEFAULT);
+            cameraPreview.setContext(getApplicationContext());
+//            cameraPreview.setActualPreviewSize(preview.getWidth(), preview.getHeight());
+            // cameraPreview.setActualPreviewSize(previewWidth, previewHeight);
         }
 
         private void createLocationManager() {
@@ -193,7 +229,6 @@ public class StreamingActivity extends Activity implements ErrorListener {
 
             if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                     && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
                 //    ActivityCompat#requestPermissions
                 // here to request the missing permissions, and then overriding
                 //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
@@ -205,105 +240,29 @@ public class StreamingActivity extends Activity implements ErrorListener {
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, LOCATION_REFRESH_TIME, LOCATION_REFRESH_DISTANCE, client);
         }
     }
+    // фильтры
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.ipcamera, menu);
-        return true;
+    // Options
+    public void offButton() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                btnStart.morph(morphingOperations.off);
+                streamStatus = false;
+            }
+        });
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.action_settings:
-                setting();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void setting() {
-        LayoutInflater factory = LayoutInflater.from(this);
-        final View textEntryView = factory.inflate(R.layout.server_setting, null);
-        AlertDialog dialog = new AlertDialog.Builder(StreamingActivity.this)
-                .setIconAttribute(android.R.attr.alertDialogIcon)
-                .setTitle(R.string.setting_title)
-                .setView(textEntryView)
-                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        EditText ipEdit = (EditText) textEntryView.findViewById(R.id.ip_edit);
-                        EditText portEdit = (EditText) textEntryView.findViewById(R.id.port_edit);
-                        if (!"".equals(ipEdit.getText().toString()))
-                            setIp(ipEdit.getText().toString());
-                        if (!"".equals(portEdit.getText().toString()))
-                            setPort(Integer.parseInt(portEdit.getText().toString()));
-
-//                        Toast.makeText(StreamingActivity.this, "New address: " + mIP + ":" + mPort, Toast.LENGTH_LONG).show();
-                    }
-                })
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-
-                    /* User clicked cancel so do some stuff */
-                    }
-                })
-                .create();
-        dialog.show();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        closeSocketClient();
-        cameraPreview.onPause();
-        cameraManager.onPause();              // release the camera immediately on pause event
-        if (streamStatus)
-            btnStart.callOnClick();
-        reset();
-    }
-
-    /**
-     * Обнуление активити
-     */
     private void reset() {
-//        btn_Start.setText(R.string.start);
         streamStatus = false;
     }
-
-    /**
-     * Сетер порта
-     *
-     * @param port новый порт
-     */
     public void setPort(int port) {
         this.port = port;
         lbl_port.setText(String.valueOf(port));
     }
-
-    /**
-     * Ставим айпи
-     *
-     * @param ip новый айпи
-     */
     public void setIp(String ip) {
         this.ip = ip;
         lbl_ip.setText(ip);
     }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        cameraManager.onResume();
-        cameraPreview.setCamera(cameraManager.getCamera());
-    }
-
-    /**
-     * Закрытие клиента
-     */
     private void closeSocketClient() {
         if (client == null)
             return;
@@ -317,5 +276,40 @@ public class StreamingActivity extends Activity implements ErrorListener {
 //        }
         client = null;
         streamStatus = false;
+    }
+
+    // Activity menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.ipcamera, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.action_greyscale:{
+                cameraPreview.setFilter(CameraPreview.Filters.GREYSCALE);
+                break;
+            }
+            case R.id.action_sepia:{
+                cameraPreview.setFilter(CameraPreview.Filters.SEPIA);
+                break;
+            }
+            case R.id.action_binary:{
+                cameraPreview.setFilter(CameraPreview.Filters.BINARY);
+                break;
+            }
+//            case R.id.action_blur:{
+//                cameraPreview.setFilter(CameraPreview.Filters.BLUR);
+//                break;
+//            }
+            default:{
+                cameraPreview.setFilter(CameraPreview.Filters.DEFAULT);
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
