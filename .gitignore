@@ -1,0 +1,4 @@
+*.lock
+Client/.gradle/2.10/taskArtifacts/cache.properties.lock
+*.bin
+*.lock

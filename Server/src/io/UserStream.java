@@ -277,6 +277,7 @@ public class UserStream extends Thread {
             }
         }
         jsonReader.endObject();
+        Coordinate newGeo = new Coordinate(geo);
         if (geoListener != null)
             geoListener.onGeoChange(new Coordinate(geo));
         if (bufferManager != null)

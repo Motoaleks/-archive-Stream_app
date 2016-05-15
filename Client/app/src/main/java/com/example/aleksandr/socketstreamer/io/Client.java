@@ -283,7 +283,7 @@ public class Client extends Thread implements LocationListener {
             double[] geo = new double[2];
             if (lastLocation != null) {
                 geo[0] = lastLocation.getAltitude();
-                geo[1] = lastLocation.getLongitude();
+                geo[1] = lastLocation.getLatitude();
             } else {
                 geo[0] = geo[1] = -1;
             }

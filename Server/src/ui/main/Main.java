@@ -197,7 +197,7 @@ public class Main extends Application implements PoolListener, ServerListener, E
                 public void handle(ActionEvent event) {
                     writeLog("Stream " + item.getId() + " starting...");
 
-                    new Thread(){
+                    new Thread() {
                         @Override
                         public void run() {
                             UserStream userStream = server.openStream(item.getId());
@@ -222,7 +222,10 @@ public class Main extends Application implements PoolListener, ServerListener, E
                 }
             });
             startButton.setStyle("-fx-font: 12 arial; -fx-base: #67c4a7;");
-            name.setText(item.getName() + ":\t" + item.getId());
+            if (item.getName() != null && !item.getName().equals("null"))
+                name.setText(item.getName() + ":\t" + item.getId());
+            else
+                name.setText(item.getId());
             setGraphic(hBox);
         }
     }

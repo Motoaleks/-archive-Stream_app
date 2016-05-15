@@ -55,8 +55,6 @@ public class StreamWindow extends Application implements DataListener, GeoListen
     private UserStream userStream;
 
     // UI
-    private Text geopositionStatus;
-    private Text convTime;
     private Text latitude;
     private Text longitude;
     private VBox geoposition;
@@ -124,8 +122,6 @@ public class StreamWindow extends Application implements DataListener, GeoListen
     private void initforms() {
         if (streamScene == null)
             return;
-        geopositionStatus = (Text) streamScene.lookup("#txt_geoStatus");
-        convTime = (Text) streamScene.lookup("#txt_convTime");
         latitude = (Text) streamScene.lookup("#txt_latitude");
         longitude = (Text) streamScene.lookup("#txt_longitude");
         geoposition = (VBox) streamScene.lookup("#vbox_geo");
