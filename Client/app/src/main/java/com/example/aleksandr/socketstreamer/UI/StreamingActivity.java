@@ -104,7 +104,7 @@ public class StreamingActivity extends Activity implements ErrorListener {
         setPort(DEFAULT_PORT);
 
         // Установка локации
-        lbl_location = (TextView) findViewById(R.id.lbl_location);
+//        lbl_location = (TextView) findViewById(R.id.lbl_location);
 
         // Morphing button
         btnStart = (MorphingButton) findViewById(R.id.button_capture);
@@ -151,6 +151,7 @@ public class StreamingActivity extends Activity implements ErrorListener {
             btnStart.callOnClick();
         reset();
     }
+
     @Override
     protected void onResume() {
         super.onResume();

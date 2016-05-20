@@ -203,6 +203,7 @@ public class Main extends Application implements PoolListener, ServerListener, E
                             UserStream userStream = server.openStream(item.getId());
                             if (userStream == null) {
                                 onError("Can't find correct stream.");
+                                return;
                             }
 
                             // здесь код не предназначенный для изменения экрана

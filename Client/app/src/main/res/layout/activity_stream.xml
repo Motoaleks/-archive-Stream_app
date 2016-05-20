@@ -45,12 +45,12 @@
                 android:textColor="@color/textColorPrimary"
                 android:textSize="13sp" />
 
-            <TextView
-                android:id="@+id/lbl_location_locked"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lbl_location"
-                android:textColor="@color/textColorPrimary" />
+            <!--<TextView-->
+                <!--android:id="@+id/lbl_location_locked"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/lbl_location"-->
+                <!--android:textColor="@color/textColorPrimary" />-->
 
         </LinearLayout>
 
@@ -76,12 +76,12 @@
                 android:textColor="@color/colorIpAndPort"
                 android:textSize="13sp" />
 
-            <TextView
-                android:id="@+id/lbl_location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/textColorPrimary"
-                android:textSize="13sp" />
+            <!--<TextView-->
+                <!--android:id="@+id/lbl_location"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/textColorPrimary"-->
+                <!--android:textSize="13sp" />-->
 
         </LinearLayout>
 

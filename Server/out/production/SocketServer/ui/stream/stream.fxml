@@ -11,42 +11,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <ImageView fx:id="view_stream" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-        <VBox prefHeight="50.0" prefWidth="169.0" styleClass="custom_stream" stylesheets="@StreamStyle.css">
-            <children>
-                <HBox prefHeight="100.0" prefWidth="200.0">
-                    <children>
-                        <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertation time:">
-                            <font>
-                                <Font name="Roboto Light" size="15.0" />
-                            </font>
-                        </Text>
-                        <Text fx:id="txt_convTime" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-                            <HBox.margin>
-                                <Insets left="10.0" />
-                            </HBox.margin>
-                            <font>
-                                <Font name="Roboto Light" size="15.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="GeoLocation status:">
-                     <font>
-                        <Font name="Roboto Light" size="15.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="txt_geoStatus" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-                     <font>
-                        <Font name="Roboto Light" size="15.0" />
-                     </font>
-                  </Text>
-               </children>
-            </HBox>
-            </children>
-        </VBox>
-        <Text fill="#ffffff52" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StreamEra">
+        <Text fill="#ffffff52" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StreamEra">
             <font>
                 <Font name="Roboto Light" size="28.0" />
             </font>

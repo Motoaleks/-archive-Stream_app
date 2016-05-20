@@ -124,7 +124,6 @@ public class UserStream extends Thread {
                 }
 
             } catch (IOException e) {
-                // TODO: 07.05.2016 Here we need to delete the stream
                 server.deleteStream(getStreamData().getId());
                 if (streamStatus != -1) {
                     if (errorListener != null)
@@ -247,7 +246,6 @@ public class UserStream extends Thread {
 
     // Ответы
     public void sendInfo(String id) throws IOException {
-        // TODO: 07.05.2016 Test this
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("id", id);
         sendJsonObject(jsonObject);
@@ -281,8 +279,9 @@ public class UserStream extends Thread {
         if (geoListener != null)
             geoListener.onGeoChange(new Coordinate(geo));
         if (bufferManager != null)
-//            bufferManager.fillBuffer(data, data.length);
             bufferManager.completeImageReceived(data);
+//            bufferManager.fillBuffer(data, data.length);
+
 
 
 //        jsonReader.nextName();

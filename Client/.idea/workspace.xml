@@ -10,34 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49b1e901-2b4c-4b25-b5f8-682c182f30ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Abstractions/Coordinate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Abstractions/PictureData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Abstractions/StreamData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Listeners/ErrorListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/listview_divider.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_row.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/StartScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/StreamingActivity.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/CameraManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/CameraPreview.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Server/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/SocketServer/io/Server.class" afterPath="$PROJECT_DIR$/../Server/out/production/SocketServer/io/Server.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_morphing_button_98a4986e56.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_morphing_button_98a4986e56.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" />
@@ -46,22 +29,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_2_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/SocketClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/SocketClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/io/StreamPool.java" afterPath="$PROJECT_DIR$/../Server/src/io/StreamPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/SocketServer/ui/stream/stream.fxml" afterPath="$PROJECT_DIR$/../Server/out/production/SocketServer/ui/stream/stream.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/io/Server.java" afterPath="$PROJECT_DIR$/../Server/src/io/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/io/UserStream.java" afterPath="$PROJECT_DIR$/../Server/src/io/UserStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/ui/main/Main.java" afterPath="$PROJECT_DIR$/../Server/src/ui/main/Main.java" />
     </list>
     <ignored path="Client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+              <caret line="137" column="65" selection-start-line="137" selection-start-column="65" selection-end-line="137" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#StartScreen#0" expanded="false" />
@@ -102,7 +83,6 @@
                 <element signature="method#setLoginListener#0;class#StartScreen#0" expanded="false" />
                 <element signature="method#tryLoadPref#0;class#StartScreen#0" expanded="false" />
                 <element signature="method#receiveStreams#0;class#StartScreen#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
                 <element signature="method#readAll#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
                 <element signature="method#parseAnswer#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
                 <element signature="method#onPreExecute#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
@@ -115,87 +95,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#launchStream#0;class#MainActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_row.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_row.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="e#649#670#0" expanded="true" />
-                <element signature="e#1410#1428#0" expanded="true" />
-                <element signature="e#1837#1853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8727274">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="activity_stream.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.6603775">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state vertical-scroll-proportion="-8.145454">
+              <caret line="78" column="12" selection-start-line="78" selection-start-column="16" selection-end-line="83" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
+      <file leaf-file-name="CameraManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.655172">
-              <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
               <folding>
-                <element signature="method#Client#0;class#Client#0" expanded="false" />
-                <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
-                <element signature="e#3953#3954#0" expanded="true" />
-                <element signature="e#3992#3993#0" expanded="true" />
-                <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
-                <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
-                <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
-                <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
-                <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraPreview.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
+                <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -204,29 +137,20 @@
       <file leaf-file-name="StreamingActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72675085">
-              <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+            <state vertical-scroll-proportion="8.611987">
+              <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
                 <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#createCameraManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
                 <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
                 <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+                <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+                <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+                <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+                <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#setting#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#onPause#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="docComment;method#reset#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#reset#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="docComment;method#setPort#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="docComment;method#setIp#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="docComment;method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
-                <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -234,14 +158,32 @@
       </file>
       <file leaf-file-name="activity_start_screen.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9454546">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <element signature="method#Client#0;class#Client#0" expanded="false" />
+                <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
+                <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
+                <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
+                <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
+                <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
+                <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -1606,7 +1548,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4381260387136" />
+        <entry key="$PROJECT_DIR$" value="4389509360433" />
         <entry key="C:\Alex\AndoidApps\StreamEra\Client" value="4377950296314" />
       </map>
     </option>
@@ -1789,14 +1731,14 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1.aar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pnikosis/materialish-progress/1.7/dd6a3cc5036ccb1021961c5db36e326c855990f4/materialish-progress-1.7.aar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/design/23.0.1/design-23.0.1.aar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/design/23.0.1/design-23.0.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dmytrodanylyk/android-morphing-button/98a4986e56/bb1334f3a4387b3c6ef418050042532dba930b81/android-morphing-button-98a4986e56.aar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-v4/23.2.1/support-v4-23.2.1.aar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/animated-vector-drawable/23.2.1/animated-vector-drawable-23.2.1.aar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-vector-drawable/23.2.1/support-vector-drawable-23.2.1.aar" />
-                            <option value="$PROJECT_DIR$/../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-v4/23.2.1/support-v4-23.2.1.aar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/animated-vector-drawable/23.2.1/animated-vector-drawable-23.2.1.aar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-vector-drawable/23.2.1/support-vector-drawable-23.2.1.aar" />
+                            <option value="$PROJECT_DIR$/../../../../AndroidStudio/SDK/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar" />
                             <option value="$MODULE_DIR$/libs/gson-2.6.2.jar" />
                           </list>
                         </option>
@@ -1945,7 +1887,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/CameraPreview.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/SharedPrefencesManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Abstractions/StreamData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/StartScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
@@ -1955,21 +1896,25 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/CameraManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/SocketClient.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1996,8 +1941,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2136,7 +2081,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2154,176 +2099,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socketstreamer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socketstreamer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socketstreamer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supporting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socketstreamer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2337,7 +2112,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="device.picker.selection" value="192.168.239.103:5555" />
+    <property name="device.picker.selection" value="192.168.56.101:5555" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
   </component>
   <component name="RecentsManager">
@@ -2638,39 +2413,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.50516176" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.516129" sideWeight="0.49483827" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33983287" sideWeight="0.50642675" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5194986" sideWeight="0.49483827" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3403782" sideWeight="0.4975912" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33983287" sideWeight="0.49357328" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2689,39 +2464,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
-          <line>177</line>
-          <properties />
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
           <line>130</line>
           <properties />
           <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
-          <line>314</line>
-          <properties />
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
-          <line>248</line>
-          <properties />
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java</url>
@@ -2735,8 +2480,26 @@
           <properties />
           <option name="timeStamp" value="183" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="186" />
+      <option name="time" value="205" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
@@ -2746,35 +2509,206 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../../../AndroidStudio/SDK/sources/android-23/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="298" column="10" selection-start-line="298" selection-start-column="10" selection-end-line="298" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="16" selection-end-line="83" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding>
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
+            <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="method#Client#0;class#Client#0" expanded="false" />
+            <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#initForms#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#setVersion#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#setLoginListener#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#tryLoadPref#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#receiveStreams#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#readAll#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#parseAnswer#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#setStatus#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#loadFromPreferences#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#saveToSharedPreferences#0;class#StartScreen#0" expanded="false" />
+            <element signature="method#onActivityResult#0;class#StartScreen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="272" column="9" selection-start-line="272" selection-start-column="9" selection-end-line="272" selection-end-column="9" />
+          <folding>
+            <element signature="method#Client#0;class#Client#0" expanded="false" />
+            <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
           <folding>
-            <element signature="docComment;field#TAG#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#MAX_BUFFER#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mHolder#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewSize#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mQueue#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mLastFrame#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mFrameLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewCallback#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#CameraPreview#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceCreated#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#setCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getImageBuffer#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#resetBuff#0;class#CameraPreview#0" expanded="false" />
             <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewWidth#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewHeight#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#onPause#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#onPause#0;class#CameraPreview#0" expanded="false" />
+            <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2783,7 +2717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2791,11 +2724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="40" selection-start-line="35" selection-start-column="11" selection-end-line="40" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#launchStream#0;class#MainActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2805,25 +2733,16 @@
           <caret line="190" column="32" selection-start-line="190" selection-start-column="32" selection-end-line="190" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
             <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#createCameraManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setting#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2835,8 +2754,6 @@
           <folding>
             <element signature="method#Client#0;class#Client#0" expanded="false" />
             <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
             <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
             <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
             <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
@@ -2858,30 +2775,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <element signature="docComment;field#TAG#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#MAX_BUFFER#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mHolder#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewSize#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mQueue#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mLastFrame#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mFrameLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewCallback#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#CameraPreview#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceCreated#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#setCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getImageBuffer#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#resetBuff#0;class#CameraPreview#0" expanded="false" />
             <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewWidth#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewHeight#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#onPause#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#onPause#0;class#CameraPreview#0" expanded="false" />
+            <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2890,7 +2785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="61" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2898,11 +2792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#launchStream#0;class#MainActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2912,25 +2801,16 @@
           <caret line="190" column="32" selection-start-line="190" selection-start-column="32" selection-end-line="190" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
             <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#createCameraManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setting#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2942,8 +2822,6 @@
           <folding>
             <element signature="method#Client#0;class#Client#0" expanded="false" />
             <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
             <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
             <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
             <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
@@ -2965,30 +2843,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <element signature="docComment;field#TAG#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#MAX_BUFFER#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mHolder#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewSize#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mQueue#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mLastFrame#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mFrameLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewCallback#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#CameraPreview#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceCreated#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#setCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getImageBuffer#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#resetBuff#0;class#CameraPreview#0" expanded="false" />
             <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewWidth#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewHeight#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#onPause#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#onPause#0;class#CameraPreview#0" expanded="false" />
+            <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2997,14 +2853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="61" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/location/LocationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9808695">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -3022,113 +2870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/location/LocationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/com/android/internal/os/ZygoteInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="697" column="0" selection-start-line="697" selection-start-column="0" selection-end-line="697" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.108108">
-          <caret line="371" column="0" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/app/Instrumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="57" selection-start-line="157" selection-start-column="57" selection-end-line="157" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.8461537">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028571429">
-          <caret line="8585" column="0" selection-start-line="8585" selection-start-column="0" selection-end-line="8585" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/org/json/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7142857">
-          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/content/SharedPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295062">
-          <caret line="257" column="11" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/java/net/InetSocketAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295062">
-          <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
-          <folding>
-            <element signature="e#5010#5011#0" expanded="false" />
-            <element signature="e#5079#5080#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/java/net/InetAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.423651">
-          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="android-dummy://C:/Alex/AndoidApps/StreamEra/Client/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33223686">
-          <caret line="4499" column="0" selection-start-line="4499" selection-start-column="0" selection-end-line="4499" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pnikosis/materialish-progress/1.7/335976ecb055994235a9df5f23b5eda9038c8672/materialish-progress-1.7-sources.jar!/com/pnikosis/materialishprogress/ProgressWheel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33223686">
@@ -3136,46 +2877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/os/Parcelable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33274338">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33274338">
-          <caret line="631" column="0" selection-start-line="631" selection-start-column="0" selection-end-line="631" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AndroidStudio/SDK/sources/android-23/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36460176">
-          <caret line="2324" column="0" selection-start-line="2324" selection-start-column="0" selection-end-line="2324" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/data/Abstractions/StreamData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16504854">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#StreamData#0" expanded="false" />
-            <element signature="method#StreamData#0;class#StreamData#0" expanded="false" />
-            <element signature="method#StreamData#1;class#StreamData#0" expanded="false" />
-            <element signature="method#StreamData#2;class#StreamData#0" expanded="false" />
-            <element signature="method#StreamData#3;class#StreamData#0" expanded="false" />
-            <element signature="method#setId#0;class#StreamData#0" expanded="false" />
-            <element signature="method#writeToParcel#0;class#StreamData#0" expanded="false" />
-            <element signature="class#2125:2371" expanded="false" />
-            <element signature="method#StreamData#4;class#StreamData#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3183,7 +2888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3210,6 +2914,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12615955">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_row.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="method#Client#0;class#Client#0" expanded="false" />
+            <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
+            <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
+            <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../AndroidStudio/SDK/sources/android-23/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02463768">
+          <caret line="298" column="10" selection-start-line="298" selection-start-column="10" selection-end-line="298" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -3217,7 +2999,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StartScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <caret line="137" column="65" selection-start-line="137" selection-start-column="65" selection-end-line="137" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#StartScreen#0" expanded="false" />
@@ -3226,7 +3008,6 @@
             <element signature="method#setLoginListener#0;class#StartScreen#0" expanded="false" />
             <element signature="method#tryLoadPref#0;class#StartScreen#0" expanded="false" />
             <element signature="method#receiveStreams#0;class#StartScreen#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
             <element signature="method#readAll#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
             <element signature="method#parseAnswer#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
             <element signature="method#onPreExecute#0;class#ReceiveStreams#0;class#StartScreen#0" expanded="false" />
@@ -3238,157 +3019,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.6603775">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/ListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8727274">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_stream.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_row.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#649#670#0" expanded="true" />
-            <element signature="e#1410#1428#0" expanded="true" />
-            <element signature="e#1837#1853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start_screen.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9454546">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state vertical-scroll-proportion="-8.145454">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="16" selection-end-line="83" selection-end-column="46" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/io/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.655172">
-          <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
-          <folding>
-            <element signature="method#Client#0;class#Client#0" expanded="false" />
-            <element signature="method#checkConnection#0;class#Client#0" expanded="false" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="method#setHostIp#0;class#Client#0" expanded="false" />
-            <element signature="method#setHostPort#0;class#Client#0" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#Client#0" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#Client#0" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#Client#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3708381">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding>
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/supporting/CameraPreview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2101033">
-          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
-          <folding>
-            <element signature="docComment;field#TAG#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#MAX_BUFFER#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mHolder#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewSize#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mQueue#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mLastFrame#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mFrameLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;field#mPreviewCallback#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#CameraPreview#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceCreated#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceDestroyed#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#surfaceChanged#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#setCamera#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getImageBuffer#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#resetBuff#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewLength#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewWidth#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#getPreviewHeight#0;class#CameraPreview#0" expanded="false" />
-            <element signature="docComment;method#onPause#0;class#CameraPreview#0" expanded="false" />
-            <element signature="method#onPause#0;class#CameraPreview#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#launchStream#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#resetBuff#0;class#CameraPreview#0" expanded="false" />
+            <element signature="method#onDraw#0;class#CameraPreview#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aleksandr/socketstreamer/UI/StreamingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72675085">
-          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+        <state vertical-scroll-proportion="8.611987">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
             <element signature="class#MorphingOperations#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#createCameraManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createLocationManager#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#createStream#0;class#StreamFactory#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#offButton#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
+            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#StreamingActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setting#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#reset#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setPort#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#setIp#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="docComment;method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
-            <element signature="method#closeSocketClient#0;class#StreamingActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -39,7 +39,7 @@ public class CameraManager {
     /**
      * Освобождение камеры
      */
-    private void releaseCamera() {
+    public void releaseCamera() {
         if (camera != null) {
             camera.release();
             camera = null;

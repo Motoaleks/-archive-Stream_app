@@ -7,6 +7,7 @@ import javafx.application.Platform;
 import ui.main.Main;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
@@ -17,12 +18,11 @@ import java.util.List;
  */
 public class Server extends Thread{
     // parent
-    Main main;
+    private Main main;
 
     // Компоненты сервера
     private ServerSocket serverSocket;
     private StreamPool streamPool;
-    private BufferManager bufferManager;
     // Listeners
 //    private DataListener dataListener; // converter
     private PoolListener poolListener; // pool
@@ -37,7 +37,6 @@ public class Server extends Thread{
         this.main = main;
         streamPool = new StreamPool(this.poolListener);
         streamPool.setErrorListener(errorListener);
-        bufferManager = new BufferManager();
     }
 //
 //    public Server(PoolListener poolListener) {
@@ -56,6 +55,7 @@ public class Server extends Thread{
         super.run();
         Platform.runLater(() -> main.onServerThinking());
         try {
+//            serverSocket = new ServerSocket(port);
             serverSocket = new ServerSocket(port);
             Platform.runLater(() -> main.onServerOpen());
             while (!isInterrupted()) {

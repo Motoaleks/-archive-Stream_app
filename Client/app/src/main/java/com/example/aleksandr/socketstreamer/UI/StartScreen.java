@@ -133,9 +133,10 @@ public class StartScreen extends Activity {
 
             Socket socket = null;
             try {
-
                 socket = new Socket();
                 socket.connect(new InetSocketAddress(ip, Integer.valueOf(port)));
+//                socket = new Socket(ip, Integer.valueOf(port));
+//                socket.connect(new InetSocketAddress(ip, Integer.valueOf(port)));
 
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
