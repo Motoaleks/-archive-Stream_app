@@ -22,7 +22,7 @@
 Главное UI сервера
 
 ![image for server stream window]
-(pics/serverStreamWindow.png)
+(pics/serverStreamWindow.jpg)
 Окно просмотра трансляции, при работе эмулятора
 
 Клиент подключается через приложение устанавливаемое через .apk на надроид смартфон.
@@ -30,5 +30,6 @@
 ## Связь с разработчиком
 
 :e-mail: mail: kerzkon@gmail.com
+
 :telephone: skype: motoaleks
 
